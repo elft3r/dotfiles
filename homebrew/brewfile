@@ -1,0 +1,11 @@
+# list of what needs to be installed by homebrew
+cmake
+coreutils
+go
+grc
+lua
+luarocks
+macvim
+spark
+
+brew-cask

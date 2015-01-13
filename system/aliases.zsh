@@ -8,3 +8,6 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# format mails to 80 characters
+alias mailfmt='mvim -v "+set textwidth=80" "+set nonumber"'

@@ -1,0 +1,4 @@
+# function to retrieve the IP of the docker instance
+docker-ip() {
+	boot2docker ip 2> /dev/null
+}

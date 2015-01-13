@@ -1,4 +1,31 @@
-syntax on
+" Vundle.vim specific code comes here
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" coding stuff
+Plugin 'scrooloose/nerdtree'
+Plugin 'fatih/vim-go.git'
+Plugin 'Valloric/YouCompleteMe.git'
+Plugin 'majutsushi/tagbar'
+
+" Plugins need to be specified before here
+" finish Vundle specific configuration
+call vundle#end()
 
 " Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+filetype plugin indent on
+
+" now the 'real' configuration starts
+set tabstop=4
+set number
+set ruler
+set hlsearch
+syntax on
+
+set clipboard=unnamed
