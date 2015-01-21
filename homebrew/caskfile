@@ -1,7 +1,9 @@
 # list of apps that will be installed by brew cask
+boot2docker
 github
 google-chrome
 google-drive
 limechat
 skype
+virtualbox
 vlc
