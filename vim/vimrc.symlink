@@ -29,3 +29,6 @@ set hlsearch
 syntax on
 
 set clipboard=unnamed
+
+" map jj to the ESC key
+imap jj <Esc>
