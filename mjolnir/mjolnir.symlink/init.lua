@@ -37,3 +37,4 @@ hotkey.bind(mash, 'b', gridset(gw/2, gh/2, gw/2, gh/2)) -- top right
 hotkey.bind(mash, 'space', spotify.play)
 hotkey.bind(mash, 'n', spotify.next)
 hotkey.bind(mash, 'p', spotify.previous)
+hotkey.bind(mash, 'i', spotify.displayCurrentTrack)
