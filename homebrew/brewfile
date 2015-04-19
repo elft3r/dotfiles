@@ -6,6 +6,8 @@ grc
 lua
 luarocks
 macvim
+python3
 spark
+tmux
 
 brew-cask
