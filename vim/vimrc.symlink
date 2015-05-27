@@ -13,6 +13,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go.git'
 Plugin 'Valloric/YouCompleteMe.git'
 Plugin 'majutsushi/tagbar'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " Plugins need to be specified before here
 " finish Vundle specific configuration
