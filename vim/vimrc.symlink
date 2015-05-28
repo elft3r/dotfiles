@@ -24,6 +24,7 @@ filetype plugin indent on
 
 " now the 'real' configuration starts
 set tabstop=4
+set shiftwidth=4
 set number
 set ruler
 set hlsearch
