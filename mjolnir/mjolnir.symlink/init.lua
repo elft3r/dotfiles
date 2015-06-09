@@ -31,13 +31,14 @@ end
 local mash = {"ctrl", "shift"}
 hotkey.bind(mash, 'a', gridset(0, 0, gw/2, gh)) -- left half
 hotkey.bind(mash, 'd', gridset(gw/2, 0, gh/2, gh)) -- right half
-hotkey.bind(mash, 't', gridset(gw/2, 0, gw/2, gh/2)) -- top right
-hotkey.bind(mash, 'b', gridset(gw/2, gh/2, gw/2, gh/2)) -- bottom right
+hotkey.bind(mash, 'w', gridset(gw/2, 0, gw/2, gh/2)) -- top right
+hotkey.bind(mash, 'x', gridset(gw/2, gh/2, gw/2, gh/2)) -- bottom right
 
 -- application positions
 hotkey.bind(mash, 's', gridset(0, 0, 4, 6)) -- skype window
 hotkey.bind(mash, 'c', gridset(1, 0, 7, gh)) -- chrome window
 hotkey.bind(mash, 'e', gridset(1, 1, 6, 6)) -- spotify window
+hotkey.bind(mash, 't', gridset(6, 0, 2, gh)) -- tweetbot window
 
 -- spotify commands
 hotkey.bind(mash, 'space', spotify.play)
