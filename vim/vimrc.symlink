@@ -28,9 +28,11 @@ set shiftwidth=4
 set number
 set ruler
 set hlsearch
+set list
 syntax on
 
 set clipboard=unnamed
 
 " map jj to the ESC key
 imap jj <Esc>
+let g:NERDTreeWinSize = 40
