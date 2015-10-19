@@ -1,13 +1,13 @@
 # list of what needs to be installed by homebrew
 cmake
 coreutils
+git
 go
 grc
 lua
-luarocks
 macvim
 python3
 spark
 tmux
 
-brew-cask
+caskroom/cask/brew-cask

@@ -1,10 +1,12 @@
 # list of apps that will be installed by brew cask
 atom
-boot2docker
-github
+github-desktop
 google-chrome
 google-drive
 limechat
 skype
+slack
+spotify
+todoist
 virtualbox
 vlc
