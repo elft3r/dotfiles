@@ -16,10 +16,10 @@ brew update
 brew upgrade
 
 # Install homebrew packages
-brew install $(cat $ZSH/homebrew/brewfile | grep -v "#")
+brew install $(cat $DOTFILES/homebrew/brewfile | grep -v "#")
 
 # Install casks
-brew cask install $(cat $ZSH/homebrew/caskfile | grep -v "#")
+brew cask install $(cat $DOTFILES/homebrew/caskfile | grep -v "#")
 
 brew cleanup
 
