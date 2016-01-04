@@ -1,5 +1,7 @@
 # list of apps that will be installed by brew cask
 atom
+cyberduck
+dockertoolbox
 github-desktop
 google-chrome
 google-drive
@@ -7,6 +9,5 @@ limechat
 skype
 slack
 spotify
-todoist
 virtualbox
 vlc
