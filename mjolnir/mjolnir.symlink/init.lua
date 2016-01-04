@@ -36,7 +36,7 @@ hotkey.bind(mash, 'x', gridset(gw/2, gh/2, gw/2, gh/2)) -- bottom right
 
 -- application positions
 hotkey.bind(mash, 's', gridset(0, 0, 4, 6)) -- skype window
-hotkey.bind(mash, 'c', gridset(2, 0, 7, gh)) -- chrome window
+hotkey.bind(mash, 'c', gridset(2, 0, 6, gh)) -- chrome window
 hotkey.bind(mash, 'v', gridset(0, 0, 6, gh)) -- chrome window
 hotkey.bind(mash, 'e', gridset(1, 1, 6, 6)) -- spotify window
 hotkey.bind(mash, 't', gridset(0, 0, 2, gh)) -- tweetbot window
