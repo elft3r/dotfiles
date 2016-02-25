@@ -5,7 +5,10 @@ echo 'rocks_servers = { "http://rocks.moonscript.org" }' >> /usr/local/etc/luaro
 luarocks install mjolnir.alert
 luarocks install mjolnir.hotkey
 luarocks install mjolnir.screen
-luarocks install mjolnir.window
+luarocks install mjolnir.application
+luarocks install mjolnir.keycodes
+luarocks install mjolnir.fnutils
+luarocks install mjolnir.geometry
 
 # install all needed user packages
 luarocks install mjolnir.bg.grid
