@@ -119,3 +119,14 @@ do
 done
 
 unset config_files
+
+# load all helper functions defined
+for dir in $DOTFILES/*/
+do
+	func=${dir}functions.sh
+	if [[ -a $func ]]
+	then
+		source $func
+	fi
+done
+
