@@ -4,7 +4,7 @@
 #
 #  Completion script for git-extras (http://github.com/tj/git-extras).
 #
-#  This depends on and reueses some of the internals of the _git completion
+#  This depends on and reuses some of the internals of the _git completion
 #  function that ships with zsh itself. It will not work with the _git that ships
 #  with git.
 #
@@ -302,7 +302,7 @@ zstyle ':completion:*:*:git:*' user-commands \
     count:'count commits' \
     create-branch:'create local and remote branch' \
     delete-branch:'delete local and remote branch' \
-    delete-merged-brancees:'delete merged branches'\
+    delete-merged-branches:'delete merged branches'\
     delete-submodule:'delete submodule' \
     delete-tag:'delete local and remote tag' \
     effort:'display effort statistics' \
