@@ -1,0 +1,21 @@
+# tmux key binding
+unbind C-b 
+set -g prefix C-s
+
+# navigate
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+#resize
+bind H resize-pane -L 5
+bind J resize-pane -D 5
+bind K resize-pane -U 5
+bind L resize-pane -R 5
+
+# soften status bar color from harsh green to light gray
+set -g status-bg '#666666'
+set -g status-fg '#aaaaaa'
+
+set -g status-right '#[fg=colour233,bg=colour241,bold] %d.%m.%Y #[fg=colour233,bg=colour245,bold] %H:%M '
