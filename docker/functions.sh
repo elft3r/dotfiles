@@ -11,3 +11,7 @@ d_unset() {
 	unset DOCKER_MACHINE_NAME
 	unset DOCKER_HOST
 }
+
+d_shell() {
+	docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
+}
