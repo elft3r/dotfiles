@@ -45,3 +45,11 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 
 # Expanded Save Dialog as Default (TRUE) and not the other (FALSE):
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# UI customization
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
+# Dock Settings
+defaults write com.apple.dock tilesize -int 50
+defaults write com.apple.dock largesize -float 95
+defaults write com.apple.dock magnification -bool true
