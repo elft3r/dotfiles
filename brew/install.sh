@@ -16,11 +16,11 @@ brew update
 brew upgrade
 
 # Install homebrew packages
-brew install $(cat $DOTFILES/homebrew/brewfile | grep -v "#")
+brew install $(cat $DOTFILES/brew/brewfile | grep -v "#")
 
 # Install casks
 brew tap caskroom/cask
-brew cask install $(cat $DOTFILES/homebrew/caskfile | grep -v "#")
+brew cask install $(cat $DOTFILES/brew/caskfile | grep -v "#")
 
 brew cleanup
 
