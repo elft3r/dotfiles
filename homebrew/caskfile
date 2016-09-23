@@ -1,14 +1,20 @@
 # list of apps that will be installed by brew cask
 atom
 cyberduck
-dockertoolbox
+docker
 evernote
 github-desktop
+gimp
 google-chrome
 google-drive
+java
+keepassx
 limechat
+mjolnir
+osxfuse
+qlstephen
 skype
 slack
 spotify
-virtualbox
 vlc
+xquartz

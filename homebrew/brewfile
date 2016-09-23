@@ -4,10 +4,9 @@ coreutils
 git
 go
 grc
+homebrew/fuse/ntfs-3g
 lua
 macvim
 python3
 spark
 tmux
-
-caskroom/cask/brew-cask
