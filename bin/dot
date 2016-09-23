@@ -17,3 +17,6 @@ $ZSH/vim/install.sh 2>&1
 
 # Install lua plugins
 $ZSH/mjolnir/install.sh 2>&1
+
+# Install FONTS
+$ZSH/font/install.sh 2>&1
