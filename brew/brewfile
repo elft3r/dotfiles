@@ -8,5 +8,6 @@ homebrew/fuse/ntfs-3g
 lua
 macvim
 python3
+reattach-to-user-namespace
 spark
 tmux
