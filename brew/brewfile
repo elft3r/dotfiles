@@ -11,3 +11,4 @@ python3
 reattach-to-user-namespace
 spark
 tmux
+wget
