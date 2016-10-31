@@ -1,6 +1,7 @@
 # list of what needs to be installed by homebrew
 cmake
 coreutils
+ctags
 git
 go
 grc
