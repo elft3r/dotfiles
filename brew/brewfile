@@ -8,6 +8,7 @@ grc
 homebrew/fuse/ntfs-3g
 lua
 macvim
+pstree
 python3
 reattach-to-user-namespace
 spark

@@ -53,3 +53,6 @@ defaults write NSGlobalDomain AppleInterfaceStyle Dark
 defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock largesize -float 95
 defaults write com.apple.dock magnification -bool true
+
+# Stop dash / dot substitution
+defaults write 'Apple Global Domain' NSAutomaticDashSubstitutionEnabled 0
