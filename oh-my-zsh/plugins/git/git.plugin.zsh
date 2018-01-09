@@ -43,6 +43,8 @@ alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
 alias gapa='git add --patch'
+alias gau='git add --update'
+alias gap='git apply'
 
 alias gb='git branch'
 alias gba='git branch -a'
@@ -84,6 +86,7 @@ alias gcs='git commit -S'
 
 alias gd='git diff'
 alias gdca='git diff --cached'
+alias gdcw='git diff --cached --word-diff'
 alias gdct='git describe --tags `git rev-list --tags --max-count=1`'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
 alias gdw='git diff --word-diff'
@@ -104,6 +107,10 @@ alias gga='git gui citool --amend'
 ggf() {
   [[ "$#" != 1 ]] && local b="$(git_current_branch)"
   git push --force origin "${b:=$1}"
+}
+ggfl() {
+[[ "$#" != 1 ]] && local b="$(git_current_branch)"
+git push --force-with-lease origin "${b:=$1}"
 }
 compdef _git ggf=git-checkout
 
@@ -185,6 +192,7 @@ alias gmom='git merge origin/master'
 alias gmt='git mergetool --no-prompt'
 alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/master'
+alias gma='git merge --abort'
 
 alias gp='git push'
 alias gpd='git push --dry-run'
@@ -237,4 +245,4 @@ alias gupv='git pull --rebase -v'
 alias glum='git pull upstream master'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
-alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
+alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
