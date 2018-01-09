@@ -1,4 +1,4 @@
-go_home=/Users/elft3r/Coding/go-home
+go_home=/Users/elft3r/Coding/go
 export GOPATH=$go_home
 export PATH=$PATH:$go_home/bin
 

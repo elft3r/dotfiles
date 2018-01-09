@@ -56,3 +56,9 @@ defaults write com.apple.dock magnification -bool true
 
 # Stop dash / dot substitution
 defaults write 'Apple Global Domain' NSAutomaticDashSubstitutionEnabled 0
+
+# configure keyboard and trackpad
+sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+

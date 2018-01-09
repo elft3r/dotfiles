@@ -3,9 +3,9 @@ cmake
 coreutils
 ctags
 git
+gnuplot
 go
 grc
-homebrew/fuse/ntfs-3g
 lua
 macvim
 pstree
