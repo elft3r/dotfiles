@@ -9,7 +9,8 @@ tm_main() {
 
 tm_nv() {
 	dir=${PWD##*/}
-	tmux new -s $dir -d
+	dir=$(echo $dir | sed 's/\./_/g')
+	tmux new -s "$dir" -d
 	tmux send-keys -t $dir 'nv' C-m
 	tmux attach -t $dir
 }
