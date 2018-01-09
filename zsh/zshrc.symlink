@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export DOTFILES=/Users/elft3r/.dotfiles
 export ZSH=$DOTFILES/oh-my-zsh
+export SHELL=/bin/zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,7 +52,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git docker docker-compose)
 
 # User configuration
 
