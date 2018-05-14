@@ -15,3 +15,5 @@ mvim -v "+PluginInstall" "+qall"
 # You Complete Me
 cd $HOME/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer --gocode-completer
+
+ln -sf $DOTFILES/vim/syntax $HOME/.vim/syntax
