@@ -1,5 +1,4 @@
 # list of apps that will be installed by brew cask
-atom
 cyberduck
 docker
 etcher
@@ -15,5 +14,6 @@ qlstephen
 skype
 slack
 spotify
+visual-studio-code
 vlc
 xquartz
