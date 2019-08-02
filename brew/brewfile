@@ -6,6 +6,7 @@ git
 gnuplot
 go
 grc
+jq
 lua
 macvim
 pstree

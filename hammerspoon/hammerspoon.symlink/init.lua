@@ -33,7 +33,7 @@ hs.hotkey.bind(bindKeys, 's', gridset(0, 0, 4, 6)) -- skype window
 hs.hotkey.bind(bindKeys, 'l', gridset(2, 0, 6, gh)) -- chrome window
 hs.hotkey.bind(bindKeys, 'h', gridset(0, 0, 6, gh)) -- chrome window
 hs.hotkey.bind(bindKeys, 'e', gridset(1, 1, 6, 6)) -- spotify window
-hs.hotkey.bind(bindKeys, 't', gridset(0, 0, 2, gh)) -- tweetbot window
+hs.hotkey.bind(bindKeys, 't', gridset(0, 0, 3, gh)) -- tweetbot window
 
 -- spotify command
 hs.hotkey.bind(bindKeys, 'space', function () hs.spotify.playpause() end)

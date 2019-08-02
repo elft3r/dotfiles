@@ -1,19 +1,15 @@
 # list of apps that will be installed by brew cask
+balenaetcher
 cyberduck
-docker
-etcher
-evernote
 gimp
+google-backup-and-sync
 google-chrome
-google-drive-file-stream
 hammerspoon
-java
-limechat
-osxfuse
+keepassxc
 qlstephen
 skype
 slack
 spotify
+tunnelblick
 visual-studio-code
-vlc
 xquartz
