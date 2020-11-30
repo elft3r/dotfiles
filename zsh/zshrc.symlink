@@ -8,6 +8,7 @@ export SHELL=/bin/zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
+SOLARIZED_THEME=light
 DEFAULT_USER="elft3r"
 
 # Uncomment the following line to use case-sensitive completion.
