@@ -9,7 +9,7 @@
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 brew update
@@ -19,7 +19,7 @@ brew upgrade
 brew install $(cat $DOTFILES/brew/brewfile | grep -v "#")
 
 # Install casks
-brew tap caskroom/cask
+brew tap homebrew/cask
 brew cask install $(cat $DOTFILES/brew/caskfile | grep -v "#")
 
 brew cleanup

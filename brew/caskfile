@@ -1,12 +1,12 @@
 # list of apps that will be installed by brew cask
 balenaetcher
 cyberduck
+docker-edge
 gimp
 google-backup-and-sync
 google-chrome
 hammerspoon
 keepassxc
-qlstephen
 skype
 slack
 spotify
