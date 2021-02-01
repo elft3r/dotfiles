@@ -1,4 +1,5 @@
 # list of what needs to be installed by homebrew
+awscli
 cmake
 coreutils
 ctags
