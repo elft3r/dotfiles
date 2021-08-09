@@ -8,6 +8,19 @@ hs.grid.setMargins('0x0')
 local gw = hs.grid.GRIDWIDTH
 local gh = hs.grid.GRIDHEIGHT
 
+local windowset = function(x, y, w, h)
+	return function()
+		local win = hs.window.focusedWindow()
+		local f = win:frame()
+
+		f.x = x
+		f.y = y
+		f.w = w
+		f.h = h
+		win:setFrame(f)
+	end
+end
+
 local gridset = function(x, y, w, h)
 	return function()
 		local win = hs.window.focusedWindow()
@@ -28,6 +41,8 @@ hs.hotkey.bind(bindKeys, 'Left', gridset(0, 0, gw/2, gh)) -- left half
 hs.hotkey.bind(bindKeys, 'Right', gridset(gw/2, 0, gh/2, gh)) -- right half
 hs.hotkey.bind(bindKeys, 'Up', gridset(gw/2, 0, gw/2, gh/2)) -- top right
 hs.hotkey.bind(bindKeys, 'Down', gridset(gw/2, gh/2, gw/2, gh/2)) -- bottom right
+
+hs.hotkey.bind(bindKeys, 'o', windowset(0, 0, 1920, 1080)) -- top lef 1920x1080
 
 hs.hotkey.bind(bindKeys, 's', gridset(0, 0, 4, 6)) -- skype window
 hs.hotkey.bind(bindKeys, 'l', gridset(2, 0, 6, gh)) -- chrome window

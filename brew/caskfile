@@ -1,6 +1,7 @@
 # list of apps that will be installed by brew cask
 balenaetcher
 cyberduck
+discord
 docker-edge
 drawio
 gimp
