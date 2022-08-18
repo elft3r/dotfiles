@@ -53,8 +53,8 @@ hs.hotkey.bind(bindKeys, 't', gridset(0, 0, 3, gh)) -- tweetbot window
 -- spotify command
 hs.hotkey.bind(bindKeys, 'space', function () hs.spotify.playpause() end)
 hs.hotkey.bind(bindKeys, 'n', function () hs.spotify.next() end)
-hs.hotkey.bind(bindKeys,'p', function () hs.spotify.previous() end)
-hs.hotkey.bind(bindKeys,'i', function () hs.spotify.displayCurrentTrack() end)
+hs.hotkey.bind(bindKeys, 'p', function () hs.spotify.previous() end)
+hs.hotkey.bind(bindKeys, 'i', function () hs.spotify.displayCurrentTrack() end)
 
 -- defeat past blocking
 hs.hotkey.bind(bindKeys, "v", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents()) end)

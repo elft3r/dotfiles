@@ -21,8 +21,8 @@ cat <<EOF
 	"lights": [
 		{
 			"on": 1,
-			"brightness": 66,
-			"temperature":174
+			"brightness": 30,
+			"temperature":175
 		}
 	]
 }
@@ -52,7 +52,7 @@ update_key_light() {
 		-H "Content-Type: application/json" \
 		-X PUT \
 		--data "$BODY" \
-		"http://192.168.1.22:9123/elgato/lights"
+		"http://192.168.1.5:9123/elgato/lights"
 }
 
 elgato_light_call() {

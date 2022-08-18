@@ -16,5 +16,6 @@ reattach-to-user-namespace
 spark
 terraform
 terragrunt
+tfenv
 tmux
 wget
