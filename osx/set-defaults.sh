@@ -16,6 +16,13 @@
 # Always open everything in Finder's list view. This is important.
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
+# Always show the filename extensions in Finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Show the Path and Status Bar in Finder
+defaults write com.apple.Finder ShowPathbar -bool true
+defaults write com.apple.Finder ShowStatusBar -bool true
+
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
