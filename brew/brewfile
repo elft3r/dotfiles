@@ -14,8 +14,7 @@ pstree
 python3
 reattach-to-user-namespace
 spark
-terraform
-terragrunt
 tfenv
+tgenv
 tmux
 wget

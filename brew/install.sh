@@ -20,7 +20,7 @@ brew install $(cat $DOTFILES/brew/brewfile | grep -v "#")
 
 # Install casks
 brew tap homebrew/cask
-brew cask install $(cat $DOTFILES/brew/caskfile | grep -v "#")
+brew install --cask $(cat $DOTFILES/brew/caskfile | grep -v "#")
 
 brew cleanup
 
