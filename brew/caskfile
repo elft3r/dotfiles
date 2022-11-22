@@ -1,4 +1,5 @@
 # list of apps that will be installed by brew cask
+amazon-chime
 balenaetcher
 cyberduck
 docker
