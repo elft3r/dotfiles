@@ -9,4 +9,13 @@
   },
   "terminal.integrated.fontFamily": "Hack",
   "terminal.integrated.fontWeight": "normal",
+  "cSpell.enableFiletypes": [
+    "lua"
+  ],
+  "cSpell.userWords": [
+    "GRIDHEIGHT",
+    "GRIDWIDTH",
+    "hammerspoon",
+    "tweetbot"
+  ]
 }

@@ -21,8 +21,10 @@ fi
 code --install-extension esbenp.prettier-vscode
 code --install-extension hashicorp.terraform
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-vscode.makefile-tools
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-german
 code --install-extension vscodevim.vim
-code --install-extension ms-python.python
