@@ -52,7 +52,7 @@ update_key_light() {
 		-H "Content-Type: application/json" \
 		-X PUT \
 		--data "$BODY" \
-		"http://192.168.1.18:9123/elgato/lights"
+		"http://192.168.1.2:9123/elgato/lights"
 }
 
 elgato_light_call() {
