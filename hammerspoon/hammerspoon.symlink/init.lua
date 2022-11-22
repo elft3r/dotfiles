@@ -8,7 +8,18 @@ hs.grid.setMargins('0x0')
 local gw = hs.grid.GRIDWIDTH
 local gh = hs.grid.GRIDHEIGHT
 
-local windowset = function(x, y, w, h)
+local resetWindow = function(x, y)
+	return function()
+		local win = hs.window.focusedWindow()
+		local f = win:frame()
+
+		f.x = x
+		f.y = y
+		win:setFrame(f)
+	end
+end
+
+local windowSet = function(x, y, w, h)
 	return function()
 		local win = hs.window.focusedWindow()
 		local f = win:frame()
@@ -21,7 +32,7 @@ local windowset = function(x, y, w, h)
 	end
 end
 
-local gridset = function(x, y, w, h)
+local gridSet = function(x, y, w, h)
 	return function()
 		local win = hs.window.focusedWindow()
 		local f = win:frame()
@@ -37,18 +48,24 @@ local gridset = function(x, y, w, h)
 	end
 end
 
-hs.hotkey.bind(bindKeys, 'Left', gridset(0, 0, gw/2, gh)) -- left half
-hs.hotkey.bind(bindKeys, 'Right', gridset(gw/2, 0, gh/2, gh)) -- right half
-hs.hotkey.bind(bindKeys, 'Up', gridset(gw/2, 0, gw/2, gh/2)) -- top right
-hs.hotkey.bind(bindKeys, 'Down', gridset(gw/2, gh/2, gw/2, gh/2)) -- bottom right
+-- Reset the window when it's outside the screen
+hs.hotkey.bind(bindKeys, 'r', resetWindow(0, 0))
 
-hs.hotkey.bind(bindKeys, 'o', windowset(0, 0, 1920, 1080)) -- top lef 1920x1080
+-- Arrange the windows with arrows
+hs.hotkey.bind(bindKeys, 'Left', gridSet(0, 0, gw/2, gh)) -- left half
+hs.hotkey.bind(bindKeys, 'Right', gridSet(gw/2, 0, gh/2, gh)) -- right half
+hs.hotkey.bind(bindKeys, 'Up', gridSet(gw/2, 0, gw/2, gh/2)) -- top right
+hs.hotkey.bind(bindKeys, 'Down', gridSet(gw/2, gh/2, gw/2, gh/2)) -- bottom right
 
-hs.hotkey.bind(bindKeys, 's', gridset(0, 0, 4, 6)) -- skype window
-hs.hotkey.bind(bindKeys, 'l', gridset(2, 0, 6, gh)) -- chrome window
-hs.hotkey.bind(bindKeys, 'h', gridset(0, 0, 6, gh)) -- chrome window
-hs.hotkey.bind(bindKeys, 'e', gridset(1, 1, 6, 6)) -- spotify window
-hs.hotkey.bind(bindKeys, 't', gridset(0, 0, 3, gh)) -- tweetbot window
+-- Set the windows to OBS recording size
+hs.hotkey.bind(bindKeys, 'o', windowSet(0, 0, 1920, 1080)) -- top lef 1920x1080
+
+-- Arrangement for specific applications
+hs.hotkey.bind(bindKeys, 's', gridSet(0, 0, 4, 6)) -- skype window
+hs.hotkey.bind(bindKeys, 'l', gridSet(2, 0, 6, gh)) -- chrome window
+hs.hotkey.bind(bindKeys, 'h', gridSet(0, 0, 6, gh)) -- chrome window
+hs.hotkey.bind(bindKeys, 'e', gridSet(1, 1, 6, 6)) -- spotify window
+hs.hotkey.bind(bindKeys, 't', gridSet(0, 0, 3, gh)) -- tweetbot window
 
 -- spotify command
 hs.hotkey.bind(bindKeys, 'space', function () hs.spotify.playpause() end)
@@ -56,7 +73,7 @@ hs.hotkey.bind(bindKeys, 'n', function () hs.spotify.next() end)
 hs.hotkey.bind(bindKeys, 'p', function () hs.spotify.previous() end)
 hs.hotkey.bind(bindKeys, 'i', function () hs.spotify.displayCurrentTrack() end)
 
--- defeat past blocking
+-- defeat paste blocking
 hs.hotkey.bind(bindKeys, "v", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents()) end)
 
 -- automatically reload the config
