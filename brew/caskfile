@@ -1,6 +1,7 @@
 # list of apps that will be installed by brew cask
 amazon-chime
 balenaetcher
+clockify
 cyberduck
 docker
 drawio
@@ -21,4 +22,3 @@ touch-portal
 tunnelblick
 tweetbot
 visual-studio-code
-xquartz
