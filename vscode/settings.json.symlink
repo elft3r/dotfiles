@@ -9,13 +9,17 @@
   },
   "terminal.integrated.fontFamily": "Hack",
   "terminal.integrated.fontWeight": "normal",
-  "cSpell.enableFiletypes": [
-    "lua"
-  ],
+  "cSpell.enableFiletypes": ["lua"],
   "cSpell.userWords": [
+    "Dallara",
     "GRIDHEIGHT",
     "GRIDWIDTH",
     "hammerspoon",
+    "IMSA",
+    "qualy",
+    "Silverstone",
+    "terragrunt",
+    "TFPATH",
     "tweetbot"
   ]
 }
