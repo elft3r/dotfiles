@@ -1,5 +1,6 @@
 # list of apps that will be installed by brew cask
 amazon-chime
+arc
 balenaetcher
 clockify
 cyberduck
@@ -12,6 +13,9 @@ hammerspoon
 homebrew/cask-drivers/elgato-control-center
 keepassxc
 keybase
+microsoft-excel
+microsoft-powerpoint
+microsoft-word
 obs
 shift
 skype
@@ -20,5 +24,4 @@ spotify
 todoist
 touch-portal
 tunnelblick
-tweetbot
 visual-studio-code
