@@ -12,6 +12,7 @@
   "cSpell.enableFiletypes": ["lua"],
   "cSpell.userWords": [
     "Dallara",
+    "doxygen",
     "GRIDHEIGHT",
     "GRIDWIDTH",
     "hammerspoon",
@@ -21,5 +22,6 @@
     "terragrunt",
     "TFPATH",
     "tweetbot"
-  ]
+  ],
+  "hediet.vscode-drawio.resizeImages": null
 }
