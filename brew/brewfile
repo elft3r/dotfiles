@@ -1,5 +1,7 @@
 # list of what needs to be installed by homebrew
 act
+automake
+aws-vault
 awscli
 cmake
 coreutils
@@ -7,12 +9,14 @@ ctags
 git
 gnuplot
 go
+graphviz
 grc
 jq
 lua
 macvim
 microsoft-remote-desktop
 nmap
+postman
 pstree
 python3
 reattach-to-user-namespace
