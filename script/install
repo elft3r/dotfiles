@@ -6,5 +6,13 @@ set -e
 
 cd "$(dirname $0)"/..
 
-# find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+INSTALLER_LIST=$(find . -maxdepth 2 -name install.sh)
+# -u 9: use a different file descriptor as otherwise the loop can break if a
+# script also uses stdin
+while IFS= read -r -u 9 installer
+do
+    echo "Run '${installer}'"
+    sh -c "${installer}"
+    echo "'${installer}' finished with exit code: $?"
+    echo "Executed '${installer}'"
+done 9<<< "${INSTALLER_LIST}"
