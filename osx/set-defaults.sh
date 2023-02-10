@@ -13,8 +13,10 @@
 # Use AirDrop over every interface. srsly this should be a default.
 #defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
-# Always open everything in Finder's list view. This is important.
-defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+# Always open everything in Finder's list view.
+# To ensure that it is all set, we need to remove all the ".DS_Store" files
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+sudo find ~/ -name ".DS_Store" -exec rm {} \;
 
 # Always show the filename extensions in Finder
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -73,3 +75,7 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# After all the configuration, reboot the finder
+sudo killall Finder
+sudo killall Dock
