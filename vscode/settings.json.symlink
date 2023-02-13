@@ -12,7 +12,9 @@
   "cSpell.enableFiletypes": ["lua"],
   "cSpell.userWords": [
     "Dallara",
+    "dotfiles",
     "doxygen",
+    "elft3r",
     "GRIDHEIGHT",
     "GRIDWIDTH",
     "hammerspoon",
