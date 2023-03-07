@@ -11,6 +11,9 @@
   "terminal.integrated.fontWeight": "normal",
   "cSpell.enableFiletypes": ["lua"],
   "cSpell.userWords": [
+    "Analyse",
+    "autoplan",
+    "blockquote",
     "Dallara",
     "dotfiles",
     "doxygen",
@@ -26,5 +29,8 @@
     "tweetbot"
   ],
   "hediet.vscode-drawio.resizeImages": null,
-  "workbench.colorTheme": "Default Dark+"
+  "workbench.colorTheme": "Default Dark+",
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }

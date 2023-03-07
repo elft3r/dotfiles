@@ -18,7 +18,9 @@ fi
 ###
 # Install the extensions
 ###
+code --install-extension dotjoshjohnson.xml
 code --install-extension esbenp.prettier-vscode
+code --install-extension golang.go
 code --install-extension hashicorp.terraform
 code --install-extension hediet.vscode-drawio
 code --install-extension ms-azuretools.vscode-docker
