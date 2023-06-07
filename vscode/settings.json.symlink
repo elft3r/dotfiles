@@ -12,6 +12,7 @@
   "cSpell.enableFiletypes": ["lua"],
   "cSpell.userWords": [
     "Analyse",
+    "attributevalue",
     "autoplan",
     "blockquote",
     "Dallara",
@@ -27,6 +28,7 @@
     "mergeable",
     "qualy",
     "Silverstone",
+    "sygnum",
     "terragrunt",
     "TFPATH",
     "tfvars",

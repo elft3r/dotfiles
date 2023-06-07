@@ -26,15 +26,18 @@ parse_aws_csv() {
 	export AWS_DEFAULT_REGION="us-east-1"
 }
 
-export_aws_profile() {
+aws_export_profile() {
 	# parse the aws config file and show the profiles
-	items=(`cat ~/.aws/config | grep "\[profile" | sed 's/\[profile \([^"]*\).*\]/\1/' | awk '{printf("\"%s\" ",$0)} END { printf "\n" }'`)
+	items=(`cat ~/.aws/config | grep "\[profile" | sed 's/\[profile \([^"]*\).*\]/\1/' | awk '{printf("%s ",$0)} END { printf "\n" }'`)
 
+	tmp=$COLUMNS
 	COLUMNS=40
 	PS3='Which AWS profile to export: '
-	select profile in "${items[@]}"
+	select profile in ${items[@]}
 	do
 		export AWS_PROFILE=$profile
 		break
 	done
+
+	COLUMNS=$tmp
 }
