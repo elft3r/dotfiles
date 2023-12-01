@@ -9,12 +9,23 @@
   },
   "terminal.integrated.fontFamily": "Hack",
   "terminal.integrated.fontWeight": "normal",
-  "cSpell.enableFiletypes": ["lua"],
+  "cSpell.enableFiletypes": [
+    "dockercompose",
+    "dockerfile",
+    "lua",
+    "makefile",
+    "terraform",
+    "terraform-vars",
+    "toml",
+    "xml"
+  ],
   "cSpell.userWords": [
     "Analyse",
     "attributevalue",
     "autoplan",
     "blockquote",
+    "boto",
+    "cftemplates",
     "Dallara",
     "devk",
     "dotfiles",
@@ -22,16 +33,21 @@
     "elft3r",
     "GRIDHEIGHT",
     "GRIDWIDTH",
+    "gunicorn",
     "hammerspoon",
     "healthcheck",
+    "healthchecks",
+    "identitystore",
     "IMSA",
     "mergeable",
     "qualy",
     "Silverstone",
+    "ssoadmin",
     "sygnum",
     "terragrunt",
     "TFPATH",
     "tfvars",
+    "timesheet",
     "traefik",
     "tweetbot"
   ],
@@ -42,5 +58,10 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.settings.applyToAllProfiles": [
+    "prettier.printWidth"
+  ],
+  "explorer.confirmDragAndDrop": false
 }
