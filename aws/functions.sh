@@ -15,6 +15,16 @@ set_aws_env_variables() {
 	export AWS_DEFAULT_REGION=$(aws configure get ${PROFILE}.region)
 }
 
+aws_assume_role() {
+	OUT=$(aws sts assume-role --role-arn $1 --role-session-name $2)
+
+	export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId')
+	export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey')
+	export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken')
+
+	unset AWS_PROFILE
+}
+
 parse_aws_csv() {
 	FILE=$1
 
@@ -27,6 +37,8 @@ parse_aws_csv() {
 }
 
 aws_export_profile() {
+	aws_unset_env_variables
+
 	# parse the aws config file and show the profiles
 	items=(`cat ~/.aws/config | grep "\[profile" | sed 's/\[profile \([^"]*\).*\]/\1/' | awk '{printf("%s ",$0)} END { printf "\n" }'`)
 
@@ -40,4 +52,14 @@ aws_export_profile() {
 	done
 
 	COLUMNS=$tmp
+}
+
+aws_unset_env_variables() {
+	for var in $(env | grep '^AWS_' | cut -d= -f1); do
+	   unset "$var"
+	done
+}
+
+ivans_fancy_aws_function() {
+	curl https://awspolicygen.s3.amazonaws.com/js/policies.js | sed '1s/[^=]*=//' | jq '[.serviceMap[]]' | pbcopy
 }
