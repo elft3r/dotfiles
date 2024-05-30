@@ -1,5 +1,6 @@
 # list of what needs to be installed by homebrew
 act
+adr-tools
 automake
 aws-vault
 awscli
@@ -9,9 +10,11 @@ ctags
 git
 gnuplot
 go
+granted
 graphviz
 grc
 jq
+k9s
 lua
 macvim
 microsoft-remote-desktop
@@ -21,7 +24,6 @@ pstree
 python3
 reattach-to-user-namespace
 spark
-tfenv
-tgenv
+tenv
 tmux
 wget

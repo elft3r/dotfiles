@@ -25,6 +25,16 @@ aws_assume_role() {
 	unset AWS_PROFILE
 }
 
+aws_get_session_token() {
+	OUT=$(aws sts get-session-token --serial-number $1 --token-code $2)
+
+	export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId')
+	export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey')
+	export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken')
+
+	unset AWS_PROFILE
+}
+
 parse_aws_csv() {
 	FILE=$1
 

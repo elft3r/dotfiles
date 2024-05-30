@@ -18,8 +18,10 @@ brew upgrade
 # Install homebrew packages
 brew install $(cat $DOTFILES/brew/brewfile | grep -v "#")
 
+brew tap common-fate/granted
+brew tap tofuutils/tap
+
 # Install casks
-brew tap homebrew/cask
 brew install --cask $(cat $DOTFILES/brew/caskfile | grep -v "#")
 
 brew cleanup
